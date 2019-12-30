@@ -19,7 +19,7 @@ class DepartmentResource extends JsonResource
             "type"=>"Department",
             "id"=>$this->id,
             "attributes"=>[
-                "Title"=>$this->title,
+                "Title"=>$this->name,
                 "About"=>$this->about
             ],
             "links"=>[
