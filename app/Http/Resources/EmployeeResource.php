@@ -30,6 +30,9 @@ class EmployeeResource extends JsonResource
             "relationships"=>$this->when($this->department_id != null && $this->manager_id != null,new EmployeeRelationshipsResource($this)),
             "links"=>[
                 "self" =>  route("employees.show",['id'=>$this->id])
+            ],
+            "meta"=>[
+                "version"=>"1.0.0"
             ]
         ];
     }

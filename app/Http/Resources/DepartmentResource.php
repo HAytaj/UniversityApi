@@ -24,6 +24,9 @@ class DepartmentResource extends JsonResource
             ],
             "links"=>[
                 "self" =>  route("departments.show",['id'=>$this->id])
+            ],
+            "meta"=>[
+                "version"=>"1.0.0"
             ]
         ];
     }

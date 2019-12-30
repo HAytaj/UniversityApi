@@ -27,6 +27,9 @@ class GroupResource extends JsonResource
             ],
             "links"=>[
                 "self"=>route("groups.show",['id'=>$this->id]),
+            ],
+            "meta"=>[
+                "version"=>"1.0.0"
             ]
         ];
     }
